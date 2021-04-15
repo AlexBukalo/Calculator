@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="338.0" prefWidth="395.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <HBox prefHeight="338.0" prefWidth="394.0">
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="zero" layoutX="10.0" layoutY="299.0" mnemonicParsing="false" onAction="#num" prefHeight="25.0" prefWidth="41.0" text="0" />
+            <Button fx:id="comma" layoutX="59.0" layoutY="299.0" mnemonicParsing="false" onAction="#num" prefHeight="25.0" prefWidth="41.0" text="," />
+            <Button fx:id="plus_minus" layoutX="108.0" layoutY="299.0" mnemonicParsing="false" onAction="#num" prefHeight="25.0" prefWidth="41.0" text="+/-" />
+            <Button fx:id="equally" layoutX="158.0" layoutY="299.0" mnemonicParsing="false" onAction="#num" prefHeight="25.0" prefWidth="41.0" text="=" />
+            <Button fx:id="one" layoutX="10.0" layoutY="267.0" mnemonicParsing="false" onAction="#num" prefHeight="25.0" prefWidth="41.0" text="1" />
+            <Button fx:id="two" layoutX="59.0" layoutY="267.0" mnemonicParsing="false" onAction="#num" prefHeight="25.0" prefWidth="41.0" text="2" />
+            <Button fx:id="three" layoutX="108.0" layoutY="267.0" mnemonicParsing="false" onAction="#num" prefHeight="25.0" prefWidth="41.0" text="3" />
+            <Button fx:id="plus" layoutX="158.0" layoutY="267.0" mnemonicParsing="false" onAction="#num" prefHeight="25.0" prefWidth="41.0" text="+" />
+            <Button fx:id="four" layoutX="10.0" layoutY="234.0" mnemonicParsing="false" onAction="#num" prefHeight="25.0" prefWidth="41.0" text="4" />
+            <Button fx:id="five" layoutX="59.0" layoutY="234.0" mnemonicParsing="false" onAction="#num" prefHeight="25.0" prefWidth="41.0" text="5" />
+            <Button fx:id="six" layoutX="108.0" layoutY="234.0" mnemonicParsing="false" onAction="#num" prefHeight="25.0" prefWidth="41.0" text="6" />
+            <Button fx:id="minus" layoutX="158.0" layoutY="234.0" mnemonicParsing="false" onAction="#num" prefHeight="25.0" prefWidth="41.0" text="-" />
+            <Button fx:id="seven" layoutX="10.0" layoutY="200.0" mnemonicParsing="false" onAction="#num" prefHeight="25.0" prefWidth="41.0" text="7" />
+            <Button fx:id="eight" layoutX="59.0" layoutY="200.0" mnemonicParsing="false" onAction="#num" prefHeight="25.0" prefWidth="41.0" text="8" />
+            <Button fx:id="nine" layoutX="108.0" layoutY="200.0" mnemonicParsing="false" onAction="#num" prefHeight="25.0" prefWidth="41.0" text="9" />
+            <Button fx:id="multiply" layoutX="158.0" layoutY="200.0" mnemonicParsing="false" onAction="#num" prefHeight="25.0" prefWidth="41.0" text="*" />
+            <Button fx:id="AC" layoutX="10.0" layoutY="169.0" mnemonicParsing="false" onAction="#num" prefHeight="25.0" prefWidth="41.0" text="AC" />
+            <Button fx:id="root" layoutX="59.0" layoutY="169.0" mnemonicParsing="false" onAction="#num" prefHeight="25.0" prefWidth="41.0" text="√‎" />
+            <Button fx:id="exponentiation" layoutX="108.0" layoutY="169.0" mnemonicParsing="false" onAction="#num" prefHeight="25.0" prefWidth="41.0" text="x^n" />
+            <Button fx:id="division" layoutX="158.0" layoutY="169.0" mnemonicParsing="false" onAction="#num" prefHeight="25.0" prefWidth="41.0" text="/" />
+            <TextField fx:id="display" editable="false" layoutX="10.0" layoutY="130.0" prefHeight="25.0" prefWidth="188.0" />
+            <Button fx:id="history" layoutX="108.0" layoutY="29.0" mnemonicParsing="false" onAction="#num" prefHeight="25.0" prefWidth="83.0" text="History" />
+         </children>
+      </Pane>
+      <Pane fx:id="pane" prefHeight="338.0" prefWidth="196.0" visible="false">
+         <children>
+            <TextArea fx:id="textHistory" layoutX="4.0" layoutY="16.0" prefHeight="306.0" prefWidth="188.0" />
+         </children></Pane>
+   </HBox>
+</AnchorPane>
