@@ -14,7 +14,6 @@ import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 
-
 public class Controller implements Initializable {
 
     private final BaseConnection baseConnection = new BaseConnection();
@@ -86,14 +85,12 @@ public class Controller implements Initializable {
     private TextArea textHistory;
 
 
-
-
     @FXML
     private void num(ActionEvent event) {
 
         if (operation == 7) {
             String regex = "\\d+";
-            if(((Button) event.getSource()).getText().matches(regex)){
+            if (((Button) event.getSource()).getText().matches(regex)) {
                 display.setText(((Button) event.getSource()).getText());
                 operation = 0;
             }
@@ -195,8 +192,9 @@ public class Controller implements Initializable {
                     operation = 7;
                     break;
             }
-        } if(event.getSource() == history) {
-            if(isVisible) {
+        }
+        if (event.getSource() == history) {
+            if (isVisible) {
                 pane.setVisible(false);
                 isVisible = false;
                 textHistory.setText("");
@@ -204,7 +202,7 @@ public class Controller implements Initializable {
                 pane.setVisible(true);
                 isVisible = true;
                 ResultSet resultSet = baseConnection.getCalc();
-                try{
+                try {
                     while (resultSet.next()) {
                         textHistory.appendText(resultSet.getString("name") + "\n");
                     }
